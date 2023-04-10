@@ -29,7 +29,7 @@ export default function Home() {
               <a className={`${poppins.className} flex items-center gap-2 hover:animate-bounce `} href="#"><span>See more</span><ArrowRightCircleIcon className='h-8 w-8 md:rotate-0 rotate-90' /> </a>
               <Image src={blob} width={300} alt='blob' className='absolute -z-10 opacity-20 right-[-50px] bottom-[-250px]' />
               </div>
-              <ul className={`hidden md:flex flex-wrap md:flex-nowrap lg:relative absolute mt-20 gap-6 z-10 bottom-[-60px] left-[50%] -translate-x-1/2 lg:w-[70%] w-[90%] lg:bg-opacity-0 bg-primary p-4 lg:p-0 rounded-md lg:text-black text-white ${poppins.className} `}>
+              <ul className={`hidden md:flex flex-wrap md:flex-nowrap lg:relative absolute mt-10 gap-6 z-10 bottom-[-60px] left-[50%] -translate-x-1/2 lg:w-[70%] w-[90%] lg:bg-opacity-0 bg-primary p-4 lg:p-0 rounded-md lg:text-black text-white ${poppins.className} `}>
                   <li className='flex items-center gap-4 text-xs'>
                     <ChatBubbleLeftRightIcon className='w-8 h-8 flex-shrink-0 lg:text-primary text-white'/>
                     <span>Instantly connect with experienced vets anytime, anywhere for expert pet advice at your fingertips.</span>
@@ -41,11 +41,13 @@ export default function Home() {
               </ul>
           </div>
         </div>
-        <div className='relative flex justify-center my-10 md:my-0 w-full md:w-4/12 md:bg-gradient-to-tr from-black to-secondary'>
-          <Image className='translate-x-[12%] w-[250px] md:w-auto md:translate-x-0 md:absolute md:top-[60%] md:-translate-y-1/2 left-[-70px]' src={mockupImage} width={340} priority alt='phone-design'  />
+        <div className=' relative flex justify-center my-10 md:my-0 w-full md:w-4/12 md:bg-gradient-to-tr from-black to-secondary'>
+          <Image className='w-[300px] md:w-[350px] lg:w-[450px] xl:w-[550px] md:absolute md:top-[55%] md:-translate-y-1/2 left-[-35%]' src={mockupImage} width={800} priority alt='phone-design'  />
         </div>
       </div>
-    
+      <div className='bg-primary'>
+       
+      </div>
     </main>
   )
 }

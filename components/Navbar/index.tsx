@@ -14,12 +14,12 @@ const Navbar = () => {
   const [isTransparent, setIsTransparent] = useState<Boolean>(true);
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
   const handleScroll = () => {
+    console.log('i run')
     const scrollPosition = window.scrollY;
     if(scrollPosition > 1) setIsTransparent(false)
     else setIsTransparent(true)
 };
 useEffect(() => {
-  handleScroll();
   window.addEventListener("scroll", handleScroll);
   return () => {
     window.removeEventListener("scroll", handleScroll);
