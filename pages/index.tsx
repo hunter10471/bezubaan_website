@@ -75,6 +75,7 @@ export default function Home() {
       </div>
     </div>
     <Footer/>
+    <p className='text-center text-xs bg-lightBlack text-white'>ALL RIGHTS RESERVED BY BEZUBAAN.CO</p>
     </main>
   )
 }
