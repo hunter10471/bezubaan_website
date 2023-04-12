@@ -9,6 +9,7 @@ import blob from '../public/assets/blob.svg'
 import Head from 'next/head'
 import IconBox from '@/components/medium/IconBox'
 import couchDog from '../public/assets/couch_dog.png'
+import Footer from '@/components/medium/Footer'
 
 const poppins = Poppins({ subsets:['latin'],weight:['400','500','600','700'] })
 
@@ -53,7 +54,7 @@ export default function Home() {
     <div className='flex flex-wrap md:flex-nowrap   lg:mt-[100px] my-10 md:my-20  mx-[5vw] gap-14 md:gap-24'>
      <div className='relative w-full md:w-4/12 flex md:justify-start items-center md:items-start  flex-col '>
           <h2 className={`${poppins.className} text-gray text-sm md:text-base font-medium uppercase`}>Pawsome Features</h2>
-          <h3 className={`text-2xl md:text-3xl md:text-left text-center font-bold ${poppins.className}`}>Discover the Amazing Benefits of Bezubaan's Cutting-Edge Technology and Expert Vet Care</h3>
+          <h3 className={`text-2xl md:text-3xl md:text-left text-center font-bold ${poppins.className}`}>Discover the Amazing Benefits of Bezubaan&apos;s Cutting-Edge Technology and Expert Vet Care</h3>
           <Image src={blob} width={300} alt='blob' className='absolute -z-10 opacity-10 top-[-100px] left-[-50px]' />
           <Image src={couchDog} width={400} alt='dog sitting on couch' className='mt-14' />
       </div>
@@ -73,6 +74,7 @@ export default function Home() {
           </div>
       </div>
     </div>
+    <Footer/>
     </main>
   )
 }
