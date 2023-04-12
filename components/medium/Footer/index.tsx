@@ -23,7 +23,7 @@ const Footer = () => {
             <li className='mb-4 text-base font-medium'><h5>Support</h5></li>
             <li className='my-3'><a href="">Help</a></li>
             <li className='my-3'><a href="">Support</a></li>
-            <li className='my-3'><a href="">FAQ's</a></li>
+            <li className='my-3'><a href="">FAQ&apos;s</a></li>
         </ul>
         <ul className='font-light text-xs'>
             <li className='mb-4 text-base font-medium'><h5>Socials</h5></li>
