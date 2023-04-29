@@ -6,7 +6,7 @@ import logo from '../../../public/assets/green_logo_only.png'
 
 
 
-const poppins = Poppins({subsets:['latin'],weight:['600','500']})
+const poppins = Poppins({subsets:['latin'],weight:['500','400']})
 
 
 
