@@ -14,6 +14,7 @@ import ReviewCard from '@/components/medium/ReviewCard'
 import r1 from '../public/assets/r1.jpg'
 import r2 from '../public/assets/r2.jpg'
 import r3 from '../public/assets/r3.jpg'
+import DownloadSection from '@/components/large/DownloadSection'
 
 const poppins = Poppins({ subsets:['latin'],weight:['400','500','600','700'] })
 
@@ -75,22 +76,23 @@ export default function Home() {
           </div>
       </div>
     </div>
-        <div  className='flex flex-col items-center lg:mt-[100px] my-10 md:my-20  mx-[5vw]'>
-            <h2 className={`${poppins.className} text-gray text-sm md:text-base font-medium uppercase text-center`}>USER'S REVIEWS</h2>
+        <div  className='flex flex-col items-center lg:mt-[100px] my-16 md:my-20  mx-[5vw]'>
+            <h2 className={`${poppins.className} text-gray text-sm md:text-base font-medium uppercase text-center`}>USER&apos;S REVIEWS</h2>
             <h3 className={`text-2xl md:text-3xl text-center capitalize font-bold ${poppins.className}`}>See what users say about us</h3>
             <h3 className={`text-xs md:text-sm text-center capitalize font-medium my-5 text-[#1264FF] cursor-pointer ${poppins.className}`}>Feedback on Google Play &gt; </h3>
-            <div className='w-[80vw] h-[500px] max-w-[600px] rounded-2xl bg-[#eeeeee] my-20 relative'>
-              <div className='absolute left-[-15%] top-[-5%]'>
+            <div className='w-[90vw] h-[700px] md:h-[500px] max-w-[600px] rounded-2xl bg-[#eeeeee] my-10 md:my-20 relative'>
+              <div className='md:absolute left-[-15%] top-[-5%]'>
                 <ReviewCard text='Bezubaan is an incredible app that has made my life as a pet owner much easier. The app is incredibly user-friendly and has an intuitive interface that makes it easy to book appointments with veterinary doctors.' name='John Smith' image={r1} />
               </div>
-              <div className='absolute right-[-15%] top-[15%]'>
+              <div className='md:absolute right-[-15%] top-[15%]'>
                 <ReviewCard text='Bezubaan has been a lifesaver for me and my furry friends. The app&apos;s ML model is impressive, and it has helped me identify potential health issues early on.' name='Elen Rogers' image={r2} />
               </div>
-              <div className='absolute left-[10%] bottom-[-10%]'>
+              <div className='md:absolute left-[10%] bottom-[-10%]'>
                 <ReviewCard text='As someone who travels frequently, Bezubaan has been a godsend. The app&apos;s ability to connect me with veterinary doctors from anywhere in the world has been incredibly helpful.' name='Aleena Moiz' image={r3} />
               </div>
             </div>
           </div>
+    <DownloadSection/>
     <Footer/>
     <p className='text-center text-xs bg-lightBlack text-white'>ALL RIGHTS RESERVED BY BEZUBAAN.CO</p>
     </main>

@@ -10,7 +10,7 @@ interface IReviewCardProps {
 
 const ReviewCard = ({image, text, name}: IReviewCardProps) => {
   return (
-    <div className='p-6 rounded-xl bg-white shadow-xl w-[300px]'>
+    <div className='p-6 rounded-xl bg-white shadow-xl w-full my-4 md:my-0 md:w-[300px]'>
         <div className='flex items-center gap-3'>
             <Image className='rounded-lg h-[56px] w-[56px] object-cover' alt='avatar' src={image} />
             <div>
