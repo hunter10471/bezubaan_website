@@ -11,7 +11,7 @@ const Footer = () => {
         <Image src={logo} width={180} alt='logo' className='h-[80px]' />
 
         </div>
-        <div className='flex justify-around w-full'>
+        {/* <div className='flex justify-around w-full'>
         <ul className='font-light text-xs'>
             <li className='mb-4 text-base font-medium'><h5>Learn More</h5></li>
             <li className='my-3'><a href="">Home</a></li>
@@ -31,7 +31,7 @@ const Footer = () => {
             <li className='my-3'><a href="">Twitter</a></li>
             <li className='my-3'><a href="">Instagram</a></li>
         </ul>
-        </div>
+        </div> */}
         <div className='flex flex-col md:items-start items-center'>
             <h4>Get in touch & Stay up to date</h4>
             <Image src={googleBadge} width={150} className='ml-[-10px] mt-5 cursor-pointer' alt='google-badge' />
